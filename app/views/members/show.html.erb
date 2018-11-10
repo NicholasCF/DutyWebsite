@@ -25,6 +25,10 @@
 
 <p>
   <strong>Position:</strong>
-  <%= @member.cell %>
+  <% if @member.MC %>
+      <td><%= MC %></td>
+    <% else %>
+      <td><%= Member %></td>
+  <% end %>
 </p>
 

@@ -5,6 +5,7 @@ class MembersController < ApplicationController
   end
 
   def show
+    set_member
   end
 
   def new
