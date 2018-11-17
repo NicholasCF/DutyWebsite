@@ -29,7 +29,8 @@
           <td><%= Member %></td>
         <% end %>
         <td><%= link_to 'Show', member %></td>
-        <td><%= link_to 'Edit', edit_member_path(member)%></td>
+        <td><%= link_to 'Edit', edit_member_path(member) %></td>
+        <td><%= link_to 'Delete', member, method: :delete %></td>
       </tr>
     <% end %>
   </tbody>

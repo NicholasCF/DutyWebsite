@@ -36,6 +36,13 @@ class MembersController < ApplicationController
     end
   end  
 
+  def destroy
+    set_member
+
+    @member.destroy
+    redirect_to members_path
+  end
+
   private
     def set_member
       @member = Member.find(params[:id])
