@@ -10,7 +10,7 @@
   <%= f.label :cell %>
   <%= f.text_field :cell %><br>
   <%= f.label :MC %>
-  <%= f.text_field :MC %><br>
+  <%= f.select(:MC, options_for_select(["true", "false"], @member.MC), {:class => 'form-control'}) %><br>
   <%= f.submit "Submit" %>
 <% end %>
   
